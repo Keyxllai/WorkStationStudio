@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+      "baseUrl": ".",
+      "noImplicitAny": false,
+      "module": "umd",
+      "composite": false,
+      "outDir": "dist",
+      "lib": [
+          "es5",
+          "dom",
+          "es2015.promise",
+          "es2015.collection",
+          "es2015.iterable"
+      ],
+      "sourceMap": true,
+      "declaration": true,
+      "target": "es5",
+      "moduleResolution": "node",
+      "experimentalDecorators": true,
+      "paths": {}
+  },
+  "exclude": [
+      "dist",
+      "node_modules",
+      "**/*.spec.ts"
+  ],
+  "include": [
+      "**/*.ts"
+  ]
+}

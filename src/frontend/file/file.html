@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="WorkStation Client">
+    <meta name="author" content="Lai">
+    <title>WorkStation Client</title>
+
+    <link href="./../vendors/bootstrap.min.css" rel="stylesheet">
+    <link href="./../vendors/metisMenu.css" rel="stylesheet">
+    <link href="./../assets/css/animate.css" rel="stylesheet">
+    <link href="./../assets/css/style.css" rel="stylesheet">
+    <link href="./../assets/css/colors/blue-dark.css" id="theme" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">WorkStation</h4>
+                    </div>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+
+                        <ol class="breadcrumb">
+                            <!-- <li><a href="#">管理</a></li> -->
+                            <li class="active">文件管理</li>
+                        </ol>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <div class="row">
+                                <div class="col-sm-3 col-xs-12">
+                                    <h3 class="box-title">文件夹</h3>
+                                    <div id="treeview" class=""></div>
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    <div class="panel">
+                                        <div class="panel-heading">文件列表</div>
+                                        <div class="table-responsive">
+                                            <table id="fileTable" class="table table-hover manage-u-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>文件名</th>
+                                                        <th>大小</th>
+                                                        <th>修改时间</th>
+                                                        <th width="300"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="fileTableBody">
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./../vendors//jquery.min.js"></script>
+    <script src="./../vendors/bootstrap.min.js"></script>
+    <script src="./../vendors/metisMenu.min.js"></script>
+    <script src="./../assets/js/custom.js"></script>
+    <script src="./../assets/js/waves.js"></script>
+    <script src="./file.js"></script>
+    <!-- <script>
+        let f = new file();
+        f.init();
+    </script> -->
+</body>
+
+</html>

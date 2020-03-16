@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="WorkStation Client">
+    <meta name="author" content="Lai">
+    <title>WorkStation Client</title>
+
+    <link href="./vendors/bootstrap.min.css" rel="stylesheet">
+    <link href="./vendors/metisMenu.css" rel="stylesheet">
+    <link href="./assets/css/animate.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/colors/blue-dark.css" id="theme" rel="stylesheet">
+
+</head>
+
+<body style="overflow:-Scroll;overflow-y:hidden">
+    <!-- <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+        </svg>
+    </div> -->
+
+    <div id="wrapper">
+
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav slimscrollsidebar">
+                <div class="sidebar-head">
+                    <h3><span class="fa-fw open-close"><i class="ti-menu hidden-xs"></i></span> <span class="hide-menu">导航</span></h3>
+                </div>
+                <ul class="nav" id="side-menu">
+                    <li>
+                        <a target="content" href="./summary/summary.html" class="waves-effect">
+                            <i data-icon="7" class="mdi mdi-av-timer fa-fw"></i>
+                            <span class="hide-menu">总览</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="content" href="./file/file.html" class="waves-effect">
+                            <i data-icon="7" class="fa fa-file fa-fw"></i>
+                            <span class="hide-menu">文档</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <iframe name="content" style="position: absolute; top: 00px; height:  calc(100% - 0px); "
+            src="summary/summary.html" scrolling='auto' width='100%' frameborder=0>
+        </iframe>
+
+    </div>
+
+    <script src="./vendors//jquery.min.js"></script>
+    <script src="./vendors/bootstrap.min.js"></script>
+    <script src="./vendors/metisMenu.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <!-- <script src="./assets/js/waves.js"></script> -->
+</body>
+
+</html>
