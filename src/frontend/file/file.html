@@ -9,6 +9,7 @@
     <title>WorkStation Client</title>
 
     <link href="./../vendors/bootstrap.min.css" rel="stylesheet">
+    <link href="./../vendors/jqpagination.css" rel="stylesheet">
     <link href="./../vendors/metisMenu.css" rel="stylesheet">
     <link href="./../assets/css/animate.css" rel="stylesheet">
     <link href="./../assets/css/style.css" rel="stylesheet">
@@ -22,7 +23,7 @@
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">WorkStation</h4>
+                        <h4 class="page-title">Work Station Studio</h4>
                     </div>
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
 
@@ -49,13 +50,36 @@
                                                 <thead>
                                                     <tr>
                                                         <th>文件名</th>
-                                                        <th>大小</th>
+                                                        <th>大小(KB)</th>
+                                                        <th>真实路径</th>
                                                         <th>修改时间</th>
                                                         <th width="300"></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody id="fileTableBody">
                                                 </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <button id="addFile" type="button"
+                                                                class="btn btn-info btn-rounded" data-toggle="modal"
+                                                                data-target="#add-file">上传文件</button>
+
+                                                        </td>
+                                                        <td colspan="2" style="text-align:right">
+                                                            <div class="pagination">
+                                                                <a href="#" class="first"
+                                                                    data-action="first">&laquo;</a>
+                                                                <a href="#" class="previous"
+                                                                    data-action="previous">&lsaquo;</a>
+                                                                <input type="text" readonly="readonly"
+                                                                    data-max-page="0" />
+                                                                <a href="#" class="next" data-action="next">&rsaquo;</a>
+                                                                <a href="#" class="last" data-action="last">&raquo;</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tfoot>
                                             </table>
                                         </div>
                                     </div>
@@ -67,8 +91,10 @@
             </div>
         </div>
     </div>
-    <script src="./../vendors//jquery.min.js"></script>
+    <script src="./../vendors/jquery.min.js"></script>
+    <script src="./../vendors/jquery.jqpagination.js"></script>
     <script src="./../vendors/bootstrap.min.js"></script>
+    <script src="./../vendors/bootstrap-treeview.min.js"></script>
     <script src="./../vendors/metisMenu.min.js"></script>
     <script src="./../assets/js/custom.js"></script>
     <script src="./../assets/js/waves.js"></script>
